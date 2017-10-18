@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Game</title>
+        
+        <link rel="stylesheet" href="styles/mystyle.css" type="text/css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="scripts/simple.js" type="text/javascript"></script>
+
+        
+    </head>
+    
+    <body>
+        <header role="banner">
+            <div>
+                <h1>Irexchange coding exercise!</h1>
+
+            </div>
+        </header>
+        
+            <main class="container">
+                <section class="content">
+	               <div class="info">
+		              <div><h2>How this game works</h2></div>
+		                  <div><p>   n children stand around a circle. 
+            
+                                     Starting with a given child and working clockwise, each child gets a 
+                                     sequential number, which we will refer to as it’s id. 
+                                     Then starting with the first child, they count out from 1 until k. The 
+                                     k’th child is now out and leaves the circle. The count starts again 
+                                     with the child immediately next to the eliminated one.
+                                     Children are so removed from the circle one by one. The winner is the 
+                                     child left standing last.</p></div>
+
+
+                            </div>
+                    <div class="game">
+                            <h1> Lets Play now!</h1>
+                            <hr>
+
+                                <p>Please enter number of children:
+                                    <input id="n" type="text" size="6" ng-model="count" min="1" required/>
+                                </p>
+                                <br>
+                                <br>
+                                <p>Please enter number of count:
+                                <input id="k" type="text" size="6"/>
+                                </p>
+                                <br>  
+                                <button id="doIt" class="btn btn-primary btn-lg" type="button" onClick="doIt()"> WHO IS THE WINNER !</button>
+                                <p id="answer"></p>
+			                    <br>
+                    </div>
+                </section>
+        </main>
+        <footer role="content info">Designed & Develope by Bess Torabi</footer>
+    </body>
+</html>
+
+
